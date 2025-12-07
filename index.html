@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CASTEC Soluções Industriais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <style>
+        body { margin:0; font-family:Arial, sans-serif; background:#b6bfe4; overflow-x:hidden; }
+
+      
+        .fade-in { opacity:0; transform:translateY(40px); animation:fadeInUp 1s forwards; }
+        @keyframes fadeInUp { to { opacity:1; transform:translateY(0); }}
+
+        .zoom-in { opacity:0; transform:scale(0.9); animation:zoomIn 0.8s forwards; }
+        @keyframes zoomIn { to { opacity:1; transform:scale(1); }}
+
+        header { 
+            background:url('https://images.unsplash.com/photo-1581093458791-9d6f6d9f7b22') center/cover no-repeat;
+            color:white; padding:140px 20px; text-align:center;
+            position:relative;
+        }
+
+
+        .logo-container { position:absolute; top:20px; left:20px; }
+        .logo-container img { width:160px; height:auto; filter:drop-shadow(0 3px 5px rgba(0,0,0,0.3)); }
+        header h1 { font-size:3rem; text-shadow:0 3px 6px rgba(0,0,0,0.4); }
+        header p { font-size:1.3rem; max-width:700px; margin:auto; text-shadow:0 2px 4px rgba(0,0,0,0.3); }
+        .btn { background:#1e90ff; padding:14px 28px; color:white; border-radius:8px; text-decoration:none; font-weight:bold; display:inline-block; margin-top:25px; transition:0.3s; }
+        .btn:hover { transform:scale(1.08); }
+
+        section { padding:70px 20px; max-width:1200px; margin:auto; }
+        h2 { color:#0a3d62; font-size:2rem; margin-bottom:20px; text-align:center; }
+
+        .serv-grid, .icon-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+
+        .card { background:white; padding:25px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); text-align:center; transition:0.3s; }
+        .card i { font-size:40px; color:#1e90ff; margin-bottom:15px; }
+        .card:hover { transform:translateY(-8px); box-shadow:0 6px 18px rgba(0,0,0,0.15); }
+
+        .sobre { display:flex; flex-wrap:wrap; align-items:center; gap:40px; }
+        .sobre img { width:460px; border-radius:12px; animation:fadeInUp 1s forwards; }
+
+        .custom-images { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+        .custom-images div { width:400px; height: 349px;  border-radius:7px; display:inline-table; align-items:center; justify-content:center; font-size:1rem; color:#555;border: 2px; }
+
+        .cta-final { background:#0a3d62; text-align:center; color:white; padding:80px 20px; animation:fadeInUp 1s forwards; }
+
+        footer { background:#222; color:white; text-align:center; padding:15px; }
+    </style>
+  <style>
+ 
+    body.dark {
+      background-color: #111;
+      color: #eee;
+    }
+    body.dark header, body.dark section, body.dark footer {
+      background-color: #111;
+      color: #eee;
+    }
+    body.dark nav a { color: #eee; }
+
+ 
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .services, .gallery, .about, .hero {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</head>
+<body>
+  <button onclick="toggleDarkMode()" style="position:fixed; bottom:20px; right:20px; padding:12px 18px; border:none; border-radius:10px; background:#333; color:#fff; cursor:pointer; z-index:999; box-shadow:0 0 10px rgba(0,0,0,0.3);">🌙 / ☀️</button>
+<body>
+
+<header class="fade-in">
+    <div class="logo-container">
+        <img src="C:\Users\jorda\Documents\pextensao\img logo\logomarca.png" alt="LogoEmpresa">
+    </div>
+
+    <h1 class="fade-in">Soluções Inteligentes em Eletricidade e Automação Industrial</h1>
+    <p class="fade-in">Tecnologia moderna, segurança e eficiência para transformar processos industriais.</p>
+ <a href="mailto:castecdf@gmail.com" class="btn fade-in">Solicitar Orçamento</a>
+
+</header>
+
+<section>
+    <h2 class="fade-in">Nossos Serviços</h2>
+    <div class="serv-grid">
+        <div class="card zoom-in"><i class="fas fa-bolt"></i><h3>Instalações Industriais</h3><p>Sistemas elétricos completos.</p></div>
+        <div class="card zoom-in"><i class="fas fa-microchip"></i><h3>Automação Industrial</h3><p>CLPs, IHMs e integração total.</p></div>
+        <div class="card zoom-in"><i class="fas fa-industry"></i><h3>Retrofit de Máquinas</h3><p>Modernização industrial eficiente.</p></div>
+        <div class="card zoom-in"><i class="fas fa-sitemap"></i><h3>IoT Industrial</h3><p>Monitoramento remoto inteligente.</p></div>
+        <div class="card zoom-in"><i class="fas fa-solar-panel"></i><h3>Eficiência Energética</h3><p>Redução de consumo garantida.</p></div>
+        <div class="card zoom-in"><i class="fas fa-tools"></i><h3>Suporte Técnico</h3><p>Manutenção e acompanhamento.</p></div>
+    </div>
+</section>
+
+<section>
+    <h2 class="fade-in">Quem Somos</h2>
+    <div class="sobre fade-in">
+        <img src="C:\Users\jorda\Documents\pextensao\img logo\foto.jpg" alt="Equipe técnica" />
+        <p>Empresa referência em automação industrial, eletricidade e soluções inteligentes que aumentam a segurança, produtividade e eficiência das operações industriais. Trabalhamos com IoT, redes industriais e sistemas avançados de monitoramento.</p>
+    </div>
+</section>
+
+<section>
+    <h2 class="fade-in">Diferenciais</h2>
+    <div class="icon-grid">
+        <div class="card zoom-in"><i class="fas fa-user-cog"></i><h3>Equipe Especializada</h3></div>
+        <div class="card zoom-in"><i class="fas fa-chart-line"></i><h3>Resultados Comprovados</h3></div>
+        <div class="card zoom-in"><i class="fas fa-robot"></i><h3>Tecnologia Avançada</h3></div>
+        <div class="card zoom-in"><i class="fas fa-clock"></i><h3>Agilidade no Atendimento</h3></div>
+    </div>
+</section>
+
+<section>
+    <h2 class="fade-in">Alguns trabalhos realizados</h2>
+    <p style=""style="text-align:center; max-width:700px; margin:auto;"></p>
+       
+   
+    <div class="custom-images fade-in">
+        <div> <img src="C:.\Users\jorda\Documents\pextensao\img logo\painel1.jpg">
+        <div><img src="C:.\Users\jorda\Documents\pextensao\img logo\painel2.jpg">
+       <div><img src="C:.\Users\jorda\Documents\pextensao\img logo\painel3.jpg">
+    </div>
+</section>
+
+<div class="cta-final" id="contato">
+    <h3>Pronto para transformar sua indústria?</h3>
+    <p>Entre em contato e receba um orçamento personalizado.</p>
+    <a href="https://wa.me/5561983146383" class="btn">Falar no WhatsApp</a>
+</div>
+
+<footer>
+    CASTEC SOLUÇÕES INDUSTRIAIS  62.562.130/0001-75 — Brasília/DF<br>
+    © 2025 — Desenvolvido por Jordana Cavalcante
+</footer>
+
+</body>
+</html>
